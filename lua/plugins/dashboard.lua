@@ -8,7 +8,7 @@ return {
         local os = require('os')
 
         -- Obtener la fecha, hora y día actual
-        local datetime = os.date('%Y-%m-%d %H:%M:%S %A')
+        local datetime = os.date('%d-%m-%Y %H:%M:%S')
         local day_of_week = os.date('%A')  -- Obtener el día de la semana
 
         -- Definir diferentes encabezados para cada día de la semana
@@ -133,10 +133,12 @@ return {
                 },
                 -- Pie de página personalizado con colores
                 footer = {
+                    '                                           ',
+                    '                                           ',
                     '   ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓   ',
-                    '   ┃  💡 Tip: Stay consistent, keep  ┃   ',
-                    '   ┃        learning and coding!     ┃   ',
-                    '   ┃  📖 Docs: https://neovim.io/doc/ ┃   ',
+                    '   ┃  💡 Tip: Stay consistent, keep    ┃   ',
+                    '   ┃        learning and coding!       ┃   ',
+                    '   ┃  📖 Docs: https://neovim.io/doc/  ┃   ',
                     '   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛   ',
                 },
             },
