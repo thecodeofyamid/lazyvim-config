@@ -59,14 +59,14 @@ return {
 
   -- Telescope configuration
   {
-    'nvim-telescope/telescope.nvim',
-    dependencies = { 'nvim-lua/plenary.nvim' },
+    "nvim-telescope/telescope.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
-      require('telescope').setup{}
+      require("telescope").setup({})
     end,
   },
   {
-    'glepnir/dashboard-nvim',
+    "glepnir/dashboard-nvim",
     config = function()
       require("dashboard").setup({
         theme = "hyper",
@@ -90,7 +90,7 @@ return {
           footer = { "🚀 Listo para el código con LazyVim 🚀" }, -- Mensaje al pie
         },
       })
-    end, 
+    end,
   },
   -- LSP configuration
   {
