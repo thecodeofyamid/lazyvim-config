@@ -9,7 +9,7 @@ return {
         direction = "float", -- Terminal flotante
         float_opts = {
           border = "curved", -- Bordes curvados
-          winblend = 10, -- Transparencia
+          winblend = 0, -- Transparencia
           title = " Terminal", -- Título con ícono Nerd Font
           title_pos = "center", -- Centrado
         },
